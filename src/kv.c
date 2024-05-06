@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv) {
     node *head = create_new_node();
-    FILE *fp = fopen("database.txt", "r");
+    FILE *fp = fopen("../database.txt", "r");
     read_db(head, fp);
 
     for (int i = 1; i < argc; ++i) {

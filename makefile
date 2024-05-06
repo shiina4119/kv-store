@@ -17,7 +17,7 @@ $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
 	$(CC) $< -c -o $@ $(CFLAGS)
 
 kv: $(OBJ)
-	$(CC) $^ -o $@ $(CFLAGS)
+	$(CC) $^ -o $(ODIR)/$@ $(CFLAGS)
 
 .PHONY: clean
 
