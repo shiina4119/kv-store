@@ -6,10 +6,10 @@ SDIR = src
 
 ODIR=build
 
-_DEPS = linkedlist.h
+_DEPS = linkedlist.h db.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = kv.o linkedlist.o 
+_OBJ = kv.o linkedlist.o db.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
