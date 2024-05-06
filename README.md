@@ -6,6 +6,7 @@ Data is read and written to `database.txt`.
 To run:
 
 ``` shell
+mkdir build
 make
 cd build
 ./kv
